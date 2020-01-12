@@ -1,0 +1,1024 @@
+* {
+    box-sizing: border-box;
+}
+
+.bar-block .dropdown-hover,
+.bar-block .dropdown-click {
+    width: 100%
+}
+
+.bar-block .dropdown-hover .dropdown-content,
+.bar-block .dropdown-click .dropdown-content {
+    min-width: 100%
+}
+
+.bar-block .dropdown-hover .button,
+.bar-block .dropdown-click .button {
+    width: 100%;
+    text-align: left;
+    padding: 15px 35px
+}
+
+.bar {
+    width: 100%;
+    margin-top: 80px;
+    overflow: hidden
+}
+
+.center .bar {
+    display: inline-block;
+    width: auto
+}
+
+.bar .bar-item {
+    padding: 15px 35px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0
+}
+
+.bar .dropdown-hover,
+.bar .dropdown-click {
+    position: static;
+    float: left
+}
+
+.bar .button {
+    white-space: normal
+}
+
+.bar-block .bar-item {
+    width: 100%;
+    display: block;
+    padding: 15px 35px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0
+}
+
+.bar-block.center .bar-item {
+    text-align: center
+}
+
+.block {
+    display: block;
+    width: 100%
+}
+
+.container:after,
+.container:before,
+.panel:after,
+.panel:before,
+.row:after,
+.row:before,
+.row-padding:after,
+.row-padding:before,
+.cell-row:before,
+.cell-row:after,
+.clear:after,
+.clear:before,
+.bar:before,
+.bar:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.container,
+.panel {
+    padding: 0 35px
+}
+
+.panel {
+    margin-top: 15px;
+    margin-bottom: 15px
+}
+
+.orange,
+.hover-orange:hover {
+    color: #fff!important;
+    background-color: rgb(93, 172, 189)!important
+}
+
+.blueGrey,
+.hover-blueGrey:hover {
+    color: #fff!important;
+    background-color: rgb(211, 221, 220)!important
+}
+
+.border-0 {
+    border: 0!important
+}
+
+.border {
+    border: 1px solid #ccc!important
+}
+
+.btn,
+.button {
+    border: none;
+    display: inline-block;
+    padding: 15px 35px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.btn,
+.button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.disabled,
+.btn:disabled,
+.button:disabled {
+    cursor: not-allowed;
+    opachoice: 0.3
+}
+
+.disabled *,
+:disabled * {
+    pointer-events: none
+}
+
+.dropdown-hover:hover>.button:first-child,
+.dropdown-click:hover>.button:first-child {
+    background-color: #ccc;
+    color: #000
+}
+
+
+/*
+@media (max-width:600px){.modal-content{margin:0 10px;width:auto!important}.modal{padding-top:30px}
+.dropdown-hover.mobile .dropdown-content,.dropdown-click.mobile .dropdown-content{position:relative}
+.hide-small{display:none!important}.mobile{display:block;width:100%!important}.bar-item.mobile,.dropdown-hover.mobile,.dropdown-click.mobile{text-align:center}
+.dropdown-hover.mobile,.dropdown-hover.mobile .btn,.dropdown-hover.mobile .button,.dropdown-click.mobile,.dropdown-click.mobile .btn,.dropdown-click.mobile .button{width:100%}}
+*/
+
+.button {
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1199px) {
+    div.bar .button {
+        float: none;
+        width: 100%;
+        margin: 0px auto;
+    }
+    .names,
+    .main,
+    div.footer,
+    .images {
+        width: 100%;
+    }
+    .container,
+    .border,
+    .textImg {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    div.tableInfoF {
+        margin: 0;
+        padding: 0;
+    }
+    div.column {
+        float: left;
+        width: 100%;
+        padding: 0;
+        display: block;
+        margin: 0;
+        margin-top: -1vh;
+    }
+    div.column th {
+        font-size: 15px;
+    }
+    div.column td {
+        font-size: 15px;
+    }
+    div.columnEduInRight {
+        width: 100%;
+        /*border: 3px solid rgb(211,221,220);*/
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        height: auto;
+        float: none;
+        margin: auto;
+        padding: 0 0 2% 0;
+    }
+    /*
+div.eduPanel{
+  width:100%;
+  margin: auto;
+}*/
+    div.pEdu {
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 2%;
+        text-align: justify;
+        vertical-align: text-top;
+        color: rgb(80, 80, 80);
+        font-size: 15px;
+    }
+    div.columnEduInLeft {
+        width: 100%;
+        /*border: 3px solid rgb(211,221,220);*/
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        height: auto;
+        float: none;
+        margin: auto;
+        padding: 0 0 2% 0;
+    }
+    div.tableEdu1 {
+        float: none;
+        width: 100%;
+        padding-top: 5%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 2%;
+        display: block;
+        margin-top: -1vh;
+    }
+    div.tableJob th,
+    td {
+        font-size: 15px;
+    }
+    div.tableEdu1 th {
+        font-size: 18px;
+    }
+    div.tableEdu2 {
+        float: none;
+        width: 100%;
+        padding: 0;
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 2%;
+        line-height: auto;
+        border-collapse: collapse;
+    }
+    div.tableEdu2 td {
+        margin: auto;
+        min-width: 100%;
+        padding-left: 0px;
+        text-align: left;
+        vertical-align: text-middle;
+        font-size: 15px;
+        color: rgb(80, 80, 80);
+    }
+    div.AA td {
+        display: block;
+    }
+    div.panelChristos {
+        width: 100%;
+        margin: 0px;
+        overflow: hidden;
+        border: 0px;
+        box-shadow: 0;
+        padding: 0;
+    }
+    div.panelChristos00 {
+        width: 100%;
+        margin: 0px;
+        overflow: hidden;
+        border: 0px;
+        box-shadow: 0;
+        padding: 0;
+        padding-top: 8%;
+        padding-bottom: 8%;
+    }
+    div.christosImg {
+        display: block;
+        padding: 5%;
+        margin: 0px auto;
+        border: 0px;
+    }
+    div.ChristosFImg {
+        width: 280px;
+        float: none;
+        margin: auto;
+        padding: 0;
+        max-height: 100%;
+        /*overflow: hidden;*/
+        border: 0px;
+    }
+    div.firstLine {
+        font-size: 18px;
+        display: block;
+        line-height: 160%;
+        padding-left: 2%;
+        padding-bottom: 0;
+    }
+    span.idiotitaLine {
+        font-size: 18px;
+        display: block;
+        line-height: 130%;
+        padding: 0;
+    }
+    div.MainLines {
+        font-size: 15px;
+        padding-left: 2%;
+    }
+
+    div.MainLines00 {
+        font-size: 20px;
+    }
+
+    div.MainLines00Border {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 2px;
+        margin: auto;
+        width: 100%;
+        color:rgb(134, 162, 158);
+        background-color: white;
+    }
+
+    .textImg {
+        padding: 0;
+        margin: 0px auto;
+        clear: left;
+    }
+    .logo {
+        max-width: 50%;
+    }
+    .socialIcons {
+        max-width: 15%;
+    }
+    div.columnEdu {
+        float: none;
+        /* Should be removed. Only for demonstration */
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    #imgJob {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        margin-bottom: 0;
+        max-width: 100px;
+        max-height: 100px;
+    }
+    div.panelJobExp {
+        margin: auto;
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding-top: 2%;
+    }
+    div.panel000 {
+        width: 100%;
+    }
+    div.panel001 {}
+    div.panel002 {}
+    div.panel003 {}
+    div.panel000AA {
+        width: 100%;
+    }
+}
+
+
+/* --------------- End of Mobile View --------------- */
+
+body {
+    font-family: Arial;
+}
+
+.containerFull {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.imagesPanel {
+    position: fixed;
+    z-index: 2;
+    /*overflow: hidden;*/
+    background-color: white;
+    width: calc(100% - 16px);
+    height: 80px;
+    top: 0;
+    border: 1px solid rgb(211, 221, 220);
+    padding-left: 2px;
+    padding-right: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.images {
+    float: none;
+    display: block;
+}
+
+.logo {
+    float: left;
+}
+
+.socialIcons {
+    margin: 55px 5px 0px 5px;
+    opacity: 0.68;
+    float: right;
+}
+
+.socialIcons:hover {
+    opacity: 1;
+    transform: translateY(-8px);
+}
+
+.footer {
+    color: rgb(80, 80, 80);
+    background-color: rgb(211, 221, 220);
+    font-size: 15px;
+    width: 100%;
+    height: 150%;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    font-weight: bold;
+}
+
+
+/* Conect Form Page*/
+/*
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: rgb(127, 127, 127);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(93, 172, 189);
+}
+*/
+.christosImg {
+    width: 240px;
+    border-radius: 50%;
+    display: block;
+    padding: 0;
+    margin: 10% auto;
+}
+
+.ChristosFImg {
+    width: 350px;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.firstLine {
+    font-size: 24px;
+    color: rgb(80, 80, 80);
+    line-height: 120%;
+    margin: auto;
+    padding: 0;
+}
+
+.idiotitaLine {
+    font-size: 20px;
+    color: rgb(134, 162, 158);
+}
+
+.MainLines {
+    font-size: 18px;
+    color: rgb(80, 80, 80);
+    line-height: 155%;
+    text-align: justify;
+    padding: 0;
+    margin: auto;
+}
+
+.MainLines00 {
+    /*display: block;*/
+    width: 100%;
+    font-size: 20px;
+    color: rgb(80, 80, 80);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    margin: auto;
+}
+
+.MainLines00Border {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2px;
+    margin: auto;
+    width: 580px;
+    color:rgb(134, 162, 158);
+    background-color: white;
+}
+
+.textImg {
+    font-family: Arial;
+    padding-right: 50px;
+}
+
+.panelChristos {
+    margin: auto;
+    width: 93%;
+    /*border: 3px solid rgb(211,221,220);*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    overflow: auto;
+}
+
+.panelChristos00 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 93%;
+    /*border: 3px solid rgb(211,221,220);*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.surName {
+    color: rgb(93, 172, 189);
+}
+
+.tableInfoF {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 170%;
+}
+
+.column th {
+    font-size: 18px;
+    color: rgb(93, 172, 189);
+    text-align: left;
+    vertical-align: text-top;
+}
+
+.column td {
+    font-size: 18px;
+    color: rgb(80, 80, 80);
+    text-align: left;
+    vertical-align: text-top;
+}
+
+.column {
+    float: left;
+    margin: 0;
+    width: 28%;
+    padding: 0px 20px 0px 0px;
+}
+
+#educationTitle {
+    text-align: center;
+    color: rgb(93, 172, 189);
+    line-height: 100%;
+}
+
+#ergasia {
+    /*padding-top: 2%;*/
+    text-align: center;
+    color: rgb(93, 172, 189);
+}
+
+
+/* Create three equal columns that floats next to each other */
+
+.columnEdu {
+    display: table-cell;
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Clear floats after the columns
+.eduPanel:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+*/
+
+.columnEduInRight {
+    vertical-align: top;
+    display: table-cell;
+    /*border: 3px solid rgb(211,221,220);*/
+}
+
+.columnEduInLeft {
+    vertical-align: top;
+    display: table-cell;
+    /*border: 3px solid rgb(211,221,220);*/
+}
+
+.pEdu {
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: justify;
+    vertical-align: text-top;
+    color: rgb(80, 80, 80);
+    font-size: 18px;
+}
+
+.tableEdu1 {
+    width: auto;
+    color: white;
+    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 2%;
+    line-height: 100%;
+}
+
+.tableEdu1 th {
+    margin: auto;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(93, 172, 189);
+}
+
+.tableEdu2 {
+    min-width: 100%;
+    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 2%;
+    line-height: auto;
+    border-collapse: collapse;
+}
+
+.tableEdu2 td {
+    margin: auto;
+    min-width: 100%;
+    padding-left: 10px;
+    text-align: left;
+    vertical-align: text-middle;
+    font-size: 18px;
+    color: rgb(80, 80, 80);
+}
+
+.tableEdu2 th {
+    padding-left: 10px;
+}
+
+.columnTableEdu {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: auto;
+}
+
+.EduColor {
+    color: rgb(93, 172, 189);
+    font-weight: bold;
+}
+
+.EduColor2 {
+    color: rgb(134, 162, 158);
+    font-weight: bold;
+}
+
+.panelJobExp {
+    margin: auto;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 2%;
+    background-color: brown;
+    overflow: hidden;
+}
+
+#IdT {
+    table-layout: fixed;
+    border-spacing: 0.5em 0.5em;
+    /*border-collapse: collapse;*/
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    table-layout: fixed;
+}
+
+#IdTA {
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+}
+
+.tableJob {
+    width: 100%;
+    margin: auto;
+    color: rgb(80, 80, 80);
+    text-align: center;
+    font-size: 18px;
+}
+
+.tableJob th {
+    text-align: justify;
+    width: 22%;
+    font-size: 18px;
+}
+
+.tableJob td {
+    text-align: justify;
+    width: 30%
+}
+
+.titleJob {
+    color: rgb(93, 172, 189);
+    font-weight: bold;
+}
+
+.titleJob2 {
+    color: rgb(134, 162, 158);
+    font-weight: bold;
+}
+
+.tableJ0 {
+    width: 100%;
+}
+
+.ImgFPanel {
+    line-height: 100%;
+    margin: auto;
+    padding: auto;
+}
+
+.ImgPP {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.panel0 {
+    float: left;
+    width: 50%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: auto;
+    /* Should be removed. Only for demonstration */
+    margin: 0;
+    background-color: coral;
+}
+
+.panel1 {
+    width: 100%;
+    /*border: 3px solid rgb(211,221,220);*/
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    height: 100%;
+    float: right;
+    margin-right: 8%;
+    padding-top: 2%;
+    background-color: red;
+}
+
+.panelIn1 {
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    background-color: rgb(93, 172, 189);
+}
+
+.panel2 {
+    width: 100%;
+    /*border: 3px solid rgb(211,221,220);*/
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    height: 100%;
+    margin-left: 8%;
+    float: left;
+    padding-top: 2%;
+    background-color: green;
+}
+
+.panel000A {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.panel000 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    width: 50%;
+    height: 160px;
+    position: relative;
+    padding-top: 0.05%;
+    padding-left: 5px;
+    margin: auto;
+    font-weight: bold;
+    color: rgb(93, 172, 189);
+}
+
+.panel001 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    width: 95%;
+    height: 120px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-left: 5px;
+    color: rgb(134, 162, 158);
+}
+
+.panel002 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    width: 95%;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-left: 5px;
+    color: rgb(80, 80, 80);
+}
+
+.panel003 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    width: 95%;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-left: 5px;
+    color: rgb(80, 80, 80);
+}
+
+.panel000AA {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    width: 70%;
+    height: 120px;
+    position: relative;
+    padding-top: 0.05%;
+    padding-left: 5px;
+    margin: auto;
+    font-weight: bold;
+    color: rgb(93, 172, 189);
+}
+
+.panel001AA {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    width: 95%;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-left: 5px;
+    color: rgb(134, 162, 158);
+}
+
+.panel002AA {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    width: 95%;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-left: 5px;
+    color: rgb(80, 80, 80);
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(93, 172, 189);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: rgb(211, 221, 220);
+    color: rgb(80, 80, 80);
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(93, 172, 189);
+}
+
+.btnDownload {
+    width: 100%;
+    margin: auto;
+    padding: auto;
+}
+
+.btn00 {
+    background-color: rgb(211, 221, 220);
+    border: none;
+    color: rgb(64, 180, 249);
+    padding: 10px;
+    cursor: pointer;
+    margin: auto;
+    font-size: 35px;
+    display: block;
+    position: relative;
+    width: auto;
+}
+
+.btn00 a:link {
+    color: rgb(64, 180, 249);
+}
+
+.btn00 a:active {
+    color: rgb(64, 180, 249);
+}
+
+.btn00 a:visited {
+    color: rgb(64, 180, 249);
+}
+
+.btn00 a:hover {
+    color: rgb(64, 180, 249);
+}
+
+.btn00 img {
+    float: left;
+}
+
+.btn00 span {
+    float: right;
+}
+
+
+/* Darker background on mouse-over */
+
+.btn00:hover {
+    background-color: rgb(255, 238, 100);
+}
+
+.requiredM00{
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+
+
+
+a {
+    color:white;
+    text-decoration: none;
+}
+
+#HREF0, #HREF1, #HREF2{
+
+    padding-top: 50px;
+
+}
